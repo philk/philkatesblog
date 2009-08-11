@@ -13,7 +13,7 @@
 				$(".tweet").tweet({
 					username: "thehawk",
 					join_text: "auto",
-					avatar_size: 32,
+					avatar_size: 26,
 					count: 5,
 					auto_join_text_default: "",
 					auto_join_text_ed: "",
@@ -25,11 +25,12 @@
 			});
 	%body
 		#container
-			#social
-				%h2
-					%center Social
+			#header
+				%h1 Still Learning...
+				%h4 I'm not sure what I'm good at yet.
 			#content= content
 			#sidebar
 				%h1 Phil Kates
-				%img{:src => '/img/twitter_logo_s.png'}
+				%a{:href => "http://twitter.com/thehawk"}
+					%img{:src => '/img/twitter_logo_s.png'}
 				.tweet

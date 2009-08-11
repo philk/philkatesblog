@@ -15,23 +15,16 @@
 #container
     :margin-top 5em
     
-#social
+#header
     +column(24)
+    +prepend(3)
 
 #content
-    +column(18)
+    +column(17)
     +prepend(4)
-    :border-style solid 
-    :border-color = black
-    :border-width 1px
     
 #sidebar
-    +column(8, true)
-    +prepend(1)
-    +append(1)
-    :border-style solid 
-    :border-color = black
-    :border-width 1px
+    +column(9, true)
     
 #postlist
     :list-style-type none
@@ -49,6 +42,7 @@
             :text-indent 0px
             :padding 0.25em
             :margin 0em
+            :line-height 1.15em
         .tweet_avatar
             :padding-right 0.5em
             :float left
