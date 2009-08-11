@@ -1,0 +1,14 @@
+---
+layout: default
+title: Index Page
+---
+
+- site.collated_posts.sort.reverse.each do |year, months|
+	%h2= year
+	- months.sort.reverse.each do |month,days|
+		- days.sort.reverse.each do |day,posts|
+			%ol
+				- posts.each do |post|
+					%li#postlist
+					%strong= post.date.strftime("%b %d")
+					= link_to(h(post.title), post.url)

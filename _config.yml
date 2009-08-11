@@ -1,0 +1,3 @@
+haml: true
+post_defaults:
+    layout: post

@@ -1,0 +1,4 @@
+Force Myself to Learn
+=====================
+
+Jekyll looks to be much more...needy than Wordpress and hopefully that'll mean I learn more.
