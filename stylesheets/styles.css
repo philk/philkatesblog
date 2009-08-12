@@ -437,15 +437,16 @@ hr { background: #dddddd; color: #dddddd; clear: both; float: none; width: 100%;
 
 hr.space { background: #dddddd; color: #dddddd; clear: both; float: none; width: 100%; height: .1em; margin: 0 0 1.45em; border: none; background: #fff; color: #fff; }
 
-#container { margin-top: 5em; }
+#container { width: 950px; margin: 0 auto; overflow: hidden; display: inline-block; margin-top: 5em; }
+#container { display: block; }
 
-#header { display: inline; float: left; margin-right: 10px; width: 950px; padding-left: 120px; }
+#header { display: inline; float: left; margin-right: 0; width: 670px; padding-left: 240px; border-style: solid; border-color: black; border-width: 1px; }
 * html #header { overflow-x: hidden; }
 
-#content { display: inline; float: left; margin-right: 10px; width: 670px; padding-left: 160px; }
+#content { display: inline; float: left; margin-right: 10px; width: 470px; padding-left: 160px; border-style: solid; border-color: black; border-width: 1px; }
 * html #content { overflow-x: hidden; }
 
-#sidebar { display: inline; float: left; margin-right: 0; width: 350px; }
+#sidebar { display: inline; float: left; margin-right: 0; width: 270px; border-style: solid; border-color: black; border-width: 1px; }
 * html #sidebar { overflow-x: hidden; }
 
 #postlist { list-style-type: none; }

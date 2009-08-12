@@ -12,3 +12,6 @@ title: Index Page
 					%li#postlist
 					%strong= post.date.strftime("%b %d")
 					= link_to(h(post.title), post.url)
+
+- rssfeed("http://twitter.com/statuses/user_timeline/5553152.rss").first(5).each do |rsspost|
+	%p= rsspost.summary

@@ -13,18 +13,28 @@
 +blueprint-scaffolding
 
 #container
+    +container
     :margin-top 5em
     
 #header
-    +column(24)
-    +prepend(3)
+    +column(17, true)
+    +prepend(6)
+    :border-style solid 
+    :border-color = black
+    :border-width 1px
 
 #content
-    +column(17)
+    +column(12)
     +prepend(4)
+    :border-style solid 
+    :border-color = black
+    :border-width 1px
     
 #sidebar
-    +column(9, true)
+    +column(7, true)
+    :border-style solid 
+    :border-color = black
+    :border-width 1px
     
 #postlist
     :list-style-type none
