@@ -1,12 +1,13 @@
 ---
 layout: default
-comments: true
 ---
 
 = content
 
 - if page.comments
 	#disqus_thread
+	:javascript
+		var disqus_developer = location.host.match(/\.dev$|^localhost/) ? 1 : 0;
 	%script{:type => "text/javascript",
 	        :src  => "http://disqus.com/forums/still-learning/embed.js"}
 	%noscript
