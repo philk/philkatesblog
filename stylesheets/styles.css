@@ -384,6 +384,10 @@ input.span-24, textarea.span-24, select.span-24 { width: 950px !important; }
 
 .push-24 { margin: 0 -960px 1.5em 960px; }
 
+.prepend-top { margin-top: 1.5em; }
+
+.append-bottom { margin-bottom: 1.5em; }
+
 .error { padding: .8em; margin-bottom: 1em; border: 2px solid #dddddd; background: #fbe3e4; color: #8a1f11; border-color: #fbc2c4; }
 .error a { color: #8a1f11; }
 
