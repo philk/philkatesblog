@@ -1,13 +1,29 @@
-!!! strict
-%html{html_attrs}
-	%head
-		%title Still Learning...
-		%link{:rel => "stylesheet", :type => "text/css", :href => "/stylesheets/ie.css"}
-		%link{:rel => "stylesheet", :type => "text/css", :href => "/stylesheets/media.css"}
-		%link{:rel => "stylesheet", :type => "text/css", :href => "/stylesheets/screen.css"}
-		%link{:rel => "stylesheet", :type => "text/css", :href => "/stylesheets/styles.css"}
-	%body
-		#container
-			#content= content
-			#sidebar
-				%h1 Phil Kates
+---
+layout: default
+comments: true
+---
+
+= content
+
+- if page.comments
+	#disqus_thread
+	%script{:type => "text/javascript",
+	        :src  => "http://disqus.com/forums/still-learning/embed.js"}
+	%noscript
+		%a{:href => "http://still-learning.disqus.com/?url=ref"}
+			View the discussion thread.
+	%a{:href => "http://disqus.com", :class => "dsq-brlink"}
+		blog comments powered by
+		%span{:class => "logo-disqus"}
+			Disqus
+	:javascript
+		(function() {
+			var links = document.getElementsByTagName('a');
+			var query = '?';
+			for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+			}
+			document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/still-learning/get_num_replies.js' + query + '"></' + 'script>');
+		})();
