@@ -1,4 +1,22 @@
-Forcing Myself to Learn
-=====================
+---
+comments: false
+---
 
-Jekyll looks to be much more...needy than Wordpress and hopefully that'll mean I learn more.
+Forcing Myself to Learn
+-----------------------
+
+Jekyll looks to be much more...needy than Wordpress and hopefully that'll mean I learn more.  There is of course the danger that it'll keep me from blogging (danger...right...) but I think I'm willing to risk that.
+
+And because I'm extra crazy I'm not doing it the easy way.  I'm using Henrik Nyh's fork so I can use HAML and I'm using Compass because I used it before and it just makes CSS so much less painful.
+
+{% highlight bash %}
+ls /usr/local
+ls /usr/place
+{% endhighlight %}
+
+{% highlight ruby %}
+require "feedzirra"
+def rssfeed(feed_url)
+  feed = Feedzirra::Feed.fetch_and_parse(feed_url).entries
+end
+{% endhighlight %}

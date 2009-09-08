@@ -1,3 +1,5 @@
 haml: true
+pygments: true
+pygments_cache: /Users/phil/Library/Caches/Pygments
 post_defaults:
     layout: post

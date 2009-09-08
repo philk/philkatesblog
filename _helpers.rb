@@ -1,5 +1,6 @@
 # require "feedzirra"
 
+# TODO: Change to feedburner
 FEED_URL = "http://philkates.com/atom.xml"
 
 # def rssfeed(feed_url)
