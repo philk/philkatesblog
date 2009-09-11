@@ -10,8 +10,12 @@ Jekyll looks to be much more...needy than Wordpress and hopefully that'll mean I
 And because I'm extra crazy I'm not doing it the easy way.  I'm using Henrik Nyh's fork so I can use HAML and I'm using Compass because I used it before and it just makes CSS so much less painful.
 
 {% highlight bash %}
-ls /usr/local
-ls /usr/place
+wget http://kernel.org/pub/software/scm/git/git-1.6.4.tar.gz
+tar zxvf git-1.6.4.tar.gz
+cd git-1.6.4
+./configure --prefix=$HOME NO_MMAP=1
+make
+make install
 {% endhighlight %}
 
 {% highlight ruby %}

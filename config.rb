@@ -4,7 +4,7 @@ project_type = :stand_alone
 http_path = "/"
 css_dir = "stylesheets"
 sass_dir = "src"
-images_dir = "images"
+images_dir = "img"
 output_style = :compact
 # To enable relative paths to assets via compass helper functions. Uncomment:
 # relative_assets = true
