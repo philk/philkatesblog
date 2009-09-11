@@ -428,7 +428,7 @@ input.text, input.title { width: 300px; }
 
 textarea { width: 390px; height: 250px; }
 
-.showgrid { background: url('/images/grid.png'); }
+.showgrid { background: url('/img/grid.png'); }
 
 
 .box { padding: 1.5em; margin-bottom: 1.5em; background: #E5ECF9; }
@@ -455,6 +455,7 @@ hr.space { background: #dddddd; color: #dddddd; clear: both; float: none; width:
 * html #sidebar { overflow-x: hidden; }
 
 #postlist { list-style-type: none; }
+#postlist strong { font: 15px "Courier", monospace; }
 
 .tweet { font-family: helvetica, verdana, arial, times, "Times New Roman", sans-serif; font-size: 1.2em; list-style-type: none; }
 .tweet .tweet_list { padding: 0em; margin: 0em; }
