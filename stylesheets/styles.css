@@ -444,14 +444,16 @@ hr.space { background: #dddddd; color: #dddddd; clear: both; float: none; width:
 #container { width: 950px; margin: 0 auto; overflow: hidden; display: inline-block; margin-top: 4em; font-family: Helvetica, Arial, "MS Trebuchet", sans-serif; }
 #container { display: block; }
 
-#header { display: inline; float: left; margin-right: 0; width: 670px; padding-left: 240px; margin-bottom: 2em; border-style: solid; border-color: black; }
+#header { display: inline; float: left; margin-right: 0; width: 670px; padding-left: 240px; margin-bottom: 2em; }
 * html #header { overflow-x: hidden; }
 
-#content { display: inline; float: left; margin-right: 10px; width: 470px; padding-left: 160px; padding-right: 40px; font-family: Verdana, Arial, "MS Trebuchet", sans-serif; border-style: solid; border-color: black; }
-* html #content { overflow-x: hidden; }
-#content pre { font: 14px Inconsolata, Monaco, sans-serif; background-color: #eef; border: 1px solid #ddd; padding: 0.4em; margin: 20px 10px; overflow-x: auto; word-wrap: break-word; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; }
+.centerbox { display: inline; float: left; margin-right: 10px; width: 470px; padding-left: 160px; padding-right: 40px; }
+* html .centerbox { overflow-x: hidden; }
+.centerbox h2 { font-family: Helvetica, Arial, sans-serif; }
+.centerbox p { text-indent: 2em; font: 13px Verdana, Arial, "MS Trebuchet", sans-serif; }
+.centerbox pre { font: 14px Inconsolata, Monaco, sans-serif; background-color: #eef; border: 1px solid #ddd; padding: 0.4em; margin: 20px 10px; overflow-x: auto; word-wrap: break-word; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; }
 
-#sidebar { display: inline; float: left; margin-right: 0; width: 270px; border-style: solid; border-color: black; }
+#sidebar { display: inline; float: left; margin-right: 0; width: 270px; float: right; }
 * html #sidebar { overflow-x: hidden; }
 
 #postlist { list-style-type: none; }

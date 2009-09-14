@@ -3,6 +3,7 @@
 @import blueprint/modules/debug.sass
 @import compass/reset.sass
 @import compass/utilities.sass
+@import blueprint/modules/fancy_type.sass
 
 +blueprint-typography("body")
 +blueprint-utilities
@@ -21,18 +22,16 @@
     +column(17, true)
     +prepend(6)
     :margin-bottom 2em
-    :border-style solid 
-    :border-color = black
-    / :border-width 1px
 
-#content
+.centerbox
     +column(12)
     +prepend(4)
     +append(1)
-    :font-family Verdana, Arial, "MS Trebuchet", sans-serif
-    :border-style solid 
-    :border-color = black
-    / :border-width 1px
+    h2
+        :font-family Helvetica, Arial, sans-serif
+    p
+        :text-indent 2em
+        :font 13px Verdana, Arial, "MS Trebuchet", sans-serif
     pre
         :font 14px Inconsolata, Monaco, sans-serif
         :background-color #eef
@@ -47,9 +46,7 @@
     
 #sidebar
     +column(7, true)
-    :border-style solid 
-    :border-color = black
-    / :border-width 1px
+    :float right
     
 #postlist
     :list-style-type none
