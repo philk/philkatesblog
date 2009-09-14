@@ -446,8 +446,10 @@ hr.space { background: #dddddd; color: #dddddd; clear: both; float: none; width:
 
 #header { display: inline; float: left; margin-right: 0; width: 670px; padding-left: 240px; margin-bottom: 2em; }
 * html #header { overflow-x: hidden; }
+#header h1 a { color: #000; text-decoration: none; }
+#header h1 a:hover { text-decoration: underline; }
 
-.centerbox { display: inline; float: left; margin-right: 10px; width: 470px; padding-left: 160px; padding-right: 40px; }
+.centerbox { display: inline; float: left; margin-right: 10px; width: 550px; padding-left: 80px; padding-right: 40px; }
 * html .centerbox { overflow-x: hidden; }
 .centerbox h2 { font-family: Helvetica, Arial, sans-serif; }
 .centerbox p { text-indent: 2em; font: 13px Verdana, Arial, "MS Trebuchet", sans-serif; }

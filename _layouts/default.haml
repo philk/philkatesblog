@@ -32,7 +32,9 @@ twitter: false
 	%body
 		#container
 			#header
-				%h1 Still Learning...
+				%h1
+					%a{:href => "http://philkates.com"}
+						Still Learning...
 				%h4 I'm haven't figured out what I'm good at yet.
 			#sidebar
 				%h1 Phil Kates
@@ -59,4 +61,3 @@ twitter: false
 					%img{:src => '/img/twitter_logo_s.png'}
 				.tweet
 			#content.centerbox= content
-			#comments.centerbox
