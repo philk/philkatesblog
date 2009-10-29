@@ -9,6 +9,7 @@ title: Index Page
 		%ol
 			- days.sort.reverse.each do |day,posts|
 				- posts.each do |post|
-					%li#postlist
-						%strong= post.date.strftime("%b %d")
+					%li.postlist
+						%strong= "[#{post.date.strftime("%b %d")}]"
 						= link_to(h(post.title), post.url)
+		%hr
