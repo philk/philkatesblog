@@ -1,4 +1,5 @@
 haml: true
+permalink: /:year/:month/:title
 pygments: true
 pygments_cache: /Users/phil/Library/Caches/Pygments
 post_defaults:
