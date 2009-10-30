@@ -437,20 +437,24 @@ textarea { width: 390px; height: 250px; }
 #header h1 a:hover { text-decoration: underline; }
 #header h1 a:visited { border: none; }
 
-.centerbox { display: inline; float: left; margin-right: 10px; width: 550px; padding-left: 80px; padding-right: 40px; }
-* html .centerbox { overflow-x: hidden; }
+#postlistbox { display: inline; float: left; margin-right: 10px; width: 510px; padding-left: 160px; }
+* html #postlistbox { overflow-x: hidden; }
+
+#postbox { display: inline; float: left; margin-right: 10px; width: 670px; padding-right: 40px; }
+* html #postbox { overflow-x: hidden; }
+
 .centerbox h2 { font-family: Helvetica, Arial, sans-serif; }
 .centerbox p { text-indent: 2em; font: 13px Helvetica, Arial, sans-serif; }
 .centerbox pre { font: 14px Inconsolata, Monaco, sans-serif; background-color: #eef; border: 1px solid #ddd; padding: 0.4em; margin: 20px 10px; overflow-x: auto; word-wrap: break-word; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; }
 .centerbox a { text-decoration: underline; }
 .centerbox hr { border: 1px dashed #888; width: 50%; height: 0px; margin-bottom: 1em; }
 
-#sidebar { display: inline; float: left; margin-right: 0; width: 270px; float: right; }
+#sidebar { display: inline; float: left; margin-right: 0; width: 230px; float: right; }
 * html #sidebar { overflow-x: hidden; }
 
 li.postlist { margin-top: 0.75em; margin-bottom: 0.75em; }
 
-.postlist { list-style-type: none; }
+.postlist { padding-left: 40px; list-style-type: none; }
 .postlist strong { font: 1.25em "Courier New", "Courier", monospace; font-weight: bold; }
 .postlist a { color: #000000; text-decoration: underline; font: 1.1em verdana, arial, times, "Times New Roman", sans-serif; }
 .postlist a:visited { color: #555; }
