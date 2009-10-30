@@ -1,6 +1,5 @@
 ---
 title: Forcing Myself to Learn
-comments: true
 ---
 
 Forcing Myself to Learn
