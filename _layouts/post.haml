@@ -2,9 +2,21 @@
 layout: default
 ---
 
+#homenav
+	%a{:href => "/"}
+		&uarr;
+
+.nav
+	- if page.previous
+		%p
+			= "#{post_arrow(page.previous, "&larr;")}"
+
 #postbox.centerbox
 	~ content
 
+	%br
+	%hr
+	%br
 	- if page.comments
 		#disqus_thread
 		:javascript
@@ -29,3 +41,8 @@ layout: default
 				}
 				document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/still-learning/get_num_replies.js' + query + '"></' + 'script>');
 			})();
+
+.nav
+	- if page.next
+		%p
+			= "#{post_arrow(page.next, "&rarr;")}"

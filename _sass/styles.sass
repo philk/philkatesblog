@@ -17,7 +17,7 @@
 #header
     +column(17, true)
     +prepend(6)
-    :margin-bottom 2em
+    :margin-bottom 0em
     h1
         a
             :color #000
@@ -32,7 +32,7 @@
     +prepend(4)
 
 #postbox
-    +column(17)
+    +column(18)
     +append(1)
     
 .centerbox
@@ -59,8 +59,8 @@
         :width 50%
         :height 0px
         :margin-bottom 1em
-    
-#sidebar
+
+.sidebar
     +column(6, true)
     :float right
     
@@ -84,6 +84,32 @@ li.postlist
         :text-decoration none
         :border-bottom 1px dotted #999
 
+
+#homenav
+    +column(23)
+    :text-align center
+    :font-size 2em
+    :padding 0em
+    :margin 0em
+    :color #000
+    a
+        :text-decoration none
+        :color #000
+    a:hover
+        :border-bottom 1px dashed #888
+    a:visited
+        :color #888
+
+.nav
+    +column(2)
+    :font-size 2.5em
+    a
+        :text-decoration none
+        :color #000
+    a:hover
+        :border-bottom 1px dashed #888
+    a:visited
+        :color #888
     
 .tweet
     :font-family verdana, arial, times, "Times New Roman", sans-serif
