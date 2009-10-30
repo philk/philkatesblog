@@ -5,7 +5,7 @@ twitter: true
 !!! strict
 %html{html_attrs}
 	%head
-		%title Still Learning...
+		%title= page.title ? "Still Learning..." + page.title : "Still Learning..."
 		%link{:rel => "stylesheet", :type => "text/css", :href => "/stylesheets/ie.css"}
 		%link{:rel => "stylesheet", :type => "text/css", :href => "/stylesheets/screen.css"}
 		%link{:rel => "stylesheet", :type => "text/css", :href => "/stylesheets/styles.css"}
@@ -35,5 +35,5 @@ twitter: true
 				%h1
 					%a{:href => "http://philkates.com"}
 						Still Learning...
-				%h4 I'm haven't figured out what I'm good at yet.
+				%h4 I haven't figured out what I'm good at yet.
 			= content
