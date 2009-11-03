@@ -446,7 +446,7 @@ textarea { width: 390px; height: 250px; }
 
 .centerbox h2 { font-family: Helvetica, Arial, sans-serif; }
 .centerbox p { text-indent: 2em; font: 13px Helvetica, Arial, sans-serif; }
-.centerbox pre { font: 14px Inconsolata, Monaco, sans-serif; background-color: #eef; border: 1px solid #ddd; padding: 0.4em; margin: 20px 10px; overflow-x: auto; word-wrap: break-word; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; }
+.centerbox pre { font: 14px Inconsolata, Monaco, monospace; background-color: #eef; border: 1px solid #ddd; padding: 0.4em; margin: 20px 10px; overflow-x: auto; word-wrap: break-word; white-space: pre-wrap; white-space: -moz-pre-wrap; white-space: -pre-wrap; }
 .centerbox a { text-decoration: underline; }
 .centerbox hr { border: 1px dashed #888; width: 50%; height: 0px; margin-bottom: 1em; }
 
@@ -472,6 +472,8 @@ li.postlist { margin-top: 0.75em; margin-bottom: 0.75em; }
 .nav a { text-decoration: none; color: #000; }
 .nav a:hover { border-bottom: 1px dashed #888; }
 .nav a:visited { color: #888; }
+
+.sitelinks a { padding-right: 0.25em; }
 
 .tweet { font-family: verdana, arial, times, "Times New Roman", sans-serif; font-size: 1em; list-style-type: none; }
 .tweet .tweet_list { padding: 0em; margin: 0em; }
