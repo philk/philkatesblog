@@ -3,6 +3,40 @@ layout: default
 title: 
 ---
 
+#mainbar.sidebar
+  %h1 Phil Kates
+  %p I'm a 25 year old IT administrator that fancies himself as maybe something more.
+  / %h4
+  /   %a{:href => "/about.html"}
+  /     More About Me
+  / %h4
+  /   %a{:href => "/projects.html"}
+  /     Projects
+  %h4 Other places you can find me:
+  .sitelinks 
+    %a{:href => "http://facebook.com/philkates"}
+      %img{:src => "/img/facebook.png"}
+    %a{:href => "http://flickr.com/hawk684"}
+      %img{:src => "/img/flickr.png"}
+    %a{:href => "http://www.last.fm/user/hawk684"}
+      %img{:src => "/img/lastfm.png"}
+    %a{:href => "http://www.linkedin.com/in/philkates"}
+      %img{:src => "/img/linkedin.png"}
+    %a{:href => "http://www.google.com/profiles/hawk684"}
+      %img{:src => "/img/google.png"}
+    %a{:href => "http://www.pandora.com/people/hawk684"}
+      %img{:src => "/img/pandora.png"}
+    %a{:href => "http://www.reddit.com/user/PhilK/"}
+      %img{:src => "/img/reddit.png"}
+    %a{:href => "http://www.youtube.com/user/hawk684"}
+      %img{:src => "/img/youtube.png"}
+    %a{:href => "http://github.com/philk"}
+      %img{:src => '/img/github.png'}
+  %br
+  %a{:href => "http://twitter.com/thehawk"}
+    %img{:src => '/img/twitter_logo_s.png'}
+  .tweet
+
 #postlistbox.centerbox
   - site.collated_posts.sort.reverse.each do |year, months|
     %h2= year
