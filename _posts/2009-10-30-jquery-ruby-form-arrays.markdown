@@ -37,7 +37,7 @@ but when I serialized them I just got:
 
 and I really didn't feel like writing a parser to turn that into easy to use data (and couldn't find one pre-written via Google).
 	
-No there had to be a way to get an array of arrays out of that where I could get a JSON array for each row.  I eventually stumbled across a few posts where people mentioned PHP getting a nice multidimensional array from $_POST when the values are named like:
+No there had to be a way to get an array of arrays out of that where I could get a JSON array for each row.  I eventually stumbled across a few posts where people mentioned PHP getting a nice multidimensional array from `$_POST` when the values are named like:
 
 {% highlight html %}
 <input name="data[0][first_name]">

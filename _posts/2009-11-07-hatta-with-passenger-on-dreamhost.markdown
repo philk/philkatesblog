@@ -110,7 +110,7 @@ python setup.py install
 
 Go into your Dreamhost management panel and go to Manage Domains.  Add a new domain or subdomain and make sure to check Passenger under Web Options.  Give that five to ten minutes and check to see that the directory now exists.
 
-We'll use hatta.philkates.com for this example, but since that's my domain and you can't have it, change it when you actually do this.  Go ahead and create the pages and cache directories and I'll try to explain what that passenger_wsgi.py file is in a second.
+We'll use hatta.philkates.com for this example, but since that's my domain and you can't have it, change it when you actually do this.  Go ahead and create the pages and cache directories and I'll try to explain what that passenger\_wsgi.py file is in a second.
 
     hatta.philkates.com
     |-public/
@@ -118,7 +118,7 @@ We'll use hatta.philkates.com for this example, but since that's my domain and y
     |-cache/
     |-passenger_wsgi.py
 
-passenger_wsgi.py is the file you create to tell Dreamhost's server that you're serving a Passenger site and how to actually do that.  This is what's working for me.  It's based on the [example](http://hatta-wiki.org/WSGI%20setup) from the Hatta site and the tip at the bottom of [this Dreamhost Wiki article](http://wiki.dreamhost.com/Passenger_WSGI#Passenger_WSGI_and_virtualenv).  Change where it says USERNAME to your user name and change the domain to your actual domain.
+passenger\_wsgi.py is the file you create to tell Dreamhost's server that you're serving a Passenger site and how to actually do that.  This is what's working for me.  It's based on the [example](http://hatta-wiki.org/WSGI%20setup) from the Hatta site and the tip at the bottom of [this Dreamhost Wiki article](http://wiki.dreamhost.com/Passenger_WSGI#Passenger_WSGI_and_virtualenv).  Change where it says USERNAME to your user name and change the domain to your actual domain.
 
 **passenger\_wsgi.py**
 
