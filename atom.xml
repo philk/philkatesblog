@@ -7,7 +7,7 @@ layout: nil
 	<link href="http://philkates.com/atom.xml" rel="self"/>
 	<link href="http://philkates.com" />
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
-	<id>http://philkates.com</id>
+  <id>http://philkates.com/</id>
 	<author>
 		<name>Phil Kates</name>
 		<email>blog@philkates.com</email>

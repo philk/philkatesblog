@@ -16,7 +16,7 @@ I'm not going through the local install because that's dependent on your OS but 
 
 {% highlight bash %}
 git init
-git add .
+git add .
 git commit -m "Initial Commit"
 {% endhighlight %}
 	
