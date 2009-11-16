@@ -1,7 +1,8 @@
 # require "feedzirra"
 
 # TODO: Change to feedburner
-FEED_URL = "http://philkates.com/atom.xml"
+# FEED_URL = "http://philkates.com/atom.xml"
+FEED_URL = "http://feeds.feedburner.com/philkates"
 
 # def rssfeed(feed_url)
 #   feed = Feedzirra::Feed.fetch_and_parse(feed_url).entries
