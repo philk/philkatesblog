@@ -17,3 +17,8 @@ desc "Build and deploy"
 task :deploy => :build do
   sh "rsync -rtzh --progress --delete _site/ hawk684@philkates.com:~/philkates.com"
 end
+
+desc "Build and deploy to test"
+task :test => :build do
+  sh "rsync -rtzh --progress --delete _site/ hawk684@philkates.com:~/testing.philkates.com"
+end
