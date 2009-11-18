@@ -15,9 +15,9 @@
     :font-family Helvetica, Arial, sans-serif
     
 #header
-    +column(17, true)
-    +prepend(6)
-    :margin-bottom 0em
+    +column(10)
+    +prepend(5)
+    :margin-bottom 1em
     h1
         a
             :font-weight bold
@@ -32,13 +32,16 @@
 
 #postlistbox
     +column(13)
-    +prepend(4)
+    +prepend(3)
 
 #postbox
     +column(18)
+    +prepend(1)
     +append(1)
+    :margin-left 10px
     
 .centerbox
+    +column(24, true)
     h2
         :font-family Helvetica, Arial, sans-serif
     p
@@ -51,9 +54,6 @@
         :padding 0.4em
         :margin 20px 10px
         :overflow-x auto
-/        :white-space pre-wrap
-/        :white-space -moz-pre-wrap
-/        :white-space -pre-wrap
     a
         :text-decoration underline
     hr
@@ -62,9 +62,22 @@
         :height 0px
         :margin-bottom 1em
 
-.sidebar
-    +column(6, true)
+#nametag
+    +column(7, true)
+    +append(1)
     :float right
+    :margin-bottom 1em
+
+#sidebar
+    +column(7)
+    a
+        :text-decoration underline
+        :color #000
+    a:hover
+        :text-decoration none
+        :border-bottom 1px dashed #888
+    a:visited
+        :color #888
     
 li.postlist
     :margin-top 0.75em
@@ -88,7 +101,7 @@ li.postlist
 
 
 #homenav
-    +column(23)
+    +column(24)
     :text-align center
     :font-size 2em
     :padding 0em
@@ -97,43 +110,81 @@ li.postlist
     a
         :text-decoration none
         :color #000
-    a:hover
-        :border-bottom 1px dashed #888
     a:visited
         :color #888
+    span
+        :border-bottom 0px solid #999
+    #homenavbox
+        +prepend(9)
+        +span(5)
+        :border-left 2px solid #888
+        :border-bottom 2px dashed #888
+        :border-right 2px solid #888
+        
 
 .nav
     +column(2)
-    :font-size 2.5em
+    :font-size 1.5em
+    :margin-top 2.5em
+    :text-align center
+    :margin-right 0em
     a
         :text-decoration none
-        :color #000
+        :color #888
     a:hover
-        :border-bottom 1px dashed #888
     a:visited
         :color #888
-
+    span
+        :font-size 2.25em
+        :line-height 0.85em
+        :vertical-align top
+    #leftnav
+        :cursor pointer
+        :padding-top 0em
+        :border-top 2px solid #888
+        :border-bottom 2px solid #888
+        :border-right 2px dashed #888
+        :height 50%
+    #leftnav:hover
+        :border-right 2px solid #888
+        :border-top 2px dashed #888
+        :border-bottom 2px dashed #888
+    #rightnav
+        :cursor pointer
+        :padding-top 0em
+        :border-top 2px solid #888
+        :border-bottom 2px solid #888
+        :border-left 2px dashed #888
+        :height 50%
+    #rightnav:hover
+        :border-left 2px solid #888
+        :border-top 2px dashed #888
+        :border-bottom 2px dashed #888
+        
 .sitelinks
     a
         :padding-right 0.25em
-    
-.tweet
+        
+#recent
     :font-family verdana, arial, times, "Times New Roman", sans-serif
-    :font-size 1em
-    :list-style-type none
-    .tweet_list
+    :font-size 0.95em
+    :overflow hidden
+    ul
         :padding 0em
-        :margin 0em
-        li
-            :overflow auto
-            :list-style-type none
-            :text-indent -0.5em
-            :padding 0.25em
-            :padding-left 1em
-            :margin 0em
-            :line-height 1.4em
-        .tweet_avatar
-            :padding-right 0.5em
+        :margin 0px
+        :margin-left 20px
+        :list-style-type none
+        img
             :float left
-            img
-                :vertical-align middle
+            :margin-top 3px
+            :margin-left -20px
+        li
+            :padding-bottom 0.25em
+            :padding-left 20px
+            :margin 0em
+            :margin-left -20px
+            :line-height 1.4em
+        .date_and_time
+            :font-size 0.9em
+            :color #666
+            :margin-bottom 0.5em

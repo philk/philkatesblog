@@ -2,47 +2,59 @@
 layout: default
 ---
 
-#homenav
-  %a{:href => "/"}
-    &uarr;
+/ #homenav
+/   #homenavbox
+/     %a{:href => "/"}
+/       %span
+/         &uarr;
+/       %br
+/       Home
+/       %br    
 
-.nav
-  - if page.previous
-    %p
-      = "#{post_arrow(page.previous, "&larr;")}"
-
-#postbox.centerbox
-  ~ content
-
-  %br
-  %hr
-  %br
-  - if page.comments
-    #disqus_thread
-    :javascript
-      var disqus_developer = location.host.match(/\.dev$|^localhost/) ? 1 : 0;
-    %script{:type => "text/javascript",
-            :src  => "http://disqus.com/forums/still-learning/embed.js"}
-    %noscript
-      %a{:href => "http://still-learning.disqus.com/?url=ref"}
-        View the discussion thread.
-    %a{:href => "http://disqus.com", :class => "dsq-brlink"}
-      blog comments powered by
-      %span{:class => "logo-disqus"}
-        Disqus
-    :javascript
-      (function() {
-        var links = document.getElementsByTagName('a');
-        var query = '?';
-        for(var i = 0; i < links.length; i++) {
-        if(links[i].href.indexOf('#disqus_thread') >= 0) {
-          query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
-        }
-        }
-        document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/still-learning/get_num_replies.js' + query + '"></' + 'script>');
-      })();
-
-.nav
-  - if page.next
-    %p
-      = "#{post_arrow(page.next, "&rarr;")}"
+.centerbox
+  .nav
+    - if page.previous
+      #leftnav{:onClick => "location.href='#{page_link(page.previous)}'"}
+        %a{:href => page_link(page.previous)}
+          %span
+            &larr;
+          Older
+  
+  #postbox
+    ~ content
+  
+    %br
+    %hr
+    %br
+    - if page.comments
+      #disqus_thread
+      :javascript
+        var disqus_developer = location.host.match(/\.dev$|^localhost/) ? 1 : 0;
+      %script{:type => "text/javascript",
+              :src  => "http://disqus.com/forums/still-learning/embed.js"}
+      %noscript
+        %a{:href => "http://still-learning.disqus.com/?url=ref"}
+          View the discussion thread.
+      %a{:href => "http://disqus.com", :class => "dsq-brlink"}
+        blog comments powered by
+        %span{:class => "logo-disqus"}
+          Disqus
+      :javascript
+        (function() {
+          var links = document.getElementsByTagName('a');
+          var query = '?';
+          for(var i = 0; i < links.length; i++) {
+          if(links[i].href.indexOf('#disqus_thread') >= 0) {
+            query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+          }
+          }
+          document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/still-learning/get_num_replies.js' + query + '"></' + 'script>');
+        })();
+  
+  .nav
+    - if page.next
+      #rightnav{:onClick => "location.href='#{page_link(page.next)}'"}
+        %a{:href => page_link(page.next)}
+          %span
+            &rarr;
+          Newer
