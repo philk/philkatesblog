@@ -469,12 +469,14 @@ li.postlist { margin-top: 0.75em; margin-bottom: 0.75em; }
 .postlist a:visited { color: #555; }
 .postlist a:hover { text-decoration: none; border-bottom: 1px dotted #999; }
 
-#homenav { display: inline; float: left; margin-right: 10px; width: 950px; text-align: center; font-size: 2em; padding: 0em; margin: 0em; color: #000; }
+#homenav { display: inline; float: left; margin-right: 0; width: 550px; text-align: center; font-size: 2em; line-height: 1em; color: #000; }
 * html #homenav { overflow-x: hidden; }
 #homenav a { text-decoration: none; color: #000; }
 #homenav a:visited { color: #888; }
 #homenav span { border-bottom: 0px solid #999; }
-#homenav #homenavbox { padding-left: 360px; width: 190px; border-left: 2px solid #888; border-bottom: 2px dashed #888; border-right: 2px solid #888; }
+#homenav #homenavbox { display: inline; float: left; margin-right: 10px; width: 150px; display: inline; float: right; position: relative; margin: 0 0px 1.5em 0px; margin-bottom: 0.5em; border-left: 2px solid #888; border-bottom: 2px dashed #888; border-right: 2px solid #888; }
+* html #homenav #homenavbox { overflow-x: hidden; }
+#homenav #homenavbox:hover { cursor: pointer; border-left: 2px dashed #888; border-bottom: 2px solid #888; border-right: 2px dashed #888; }
 
 .nav { display: inline; float: left; margin-right: 10px; width: 70px; font-size: 1.5em; margin-top: 2.5em; text-align: center; margin-right: 0em; }
 * html .nav { overflow-x: hidden; }

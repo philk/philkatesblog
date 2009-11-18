@@ -2,14 +2,14 @@
 layout: default
 ---
 
-/ #homenav
-/   #homenavbox
-/     %a{:href => "/"}
-/       %span
-/         &uarr;
-/       %br
-/       Home
-/       %br    
+#homenav
+  #homenavbox{:onClick => "location.href='/'"}
+    %a{:href => "/"}
+      %span
+        &uarr;
+      %br
+      Home
+      %br    
 
 .centerbox
   .nav
