@@ -1,2 +1,6 @@
 .sass-cache
 _site
+stylesheets/styles.css
+stylesheets/screen.css
+stylesheets/print.css
+stylesheets/ie.css
