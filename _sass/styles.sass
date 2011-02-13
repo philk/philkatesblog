@@ -94,12 +94,38 @@
         :color #000
     a:hover
         :text-decoration none
-        :border-bottom 1px dashed #888
     a:visited
         :color #888
-    .sitelinks
-        a
-            :text-decoration none
+    a#facebook
+        :background sprite-image("/img/facebook.png")
+    a#flickr
+        :background sprite-image("/img/flickr.png")
+    a#lastfm
+        :background sprite-image("/img/last.fm.png")
+    a#linkedin
+        :background sprite-image("/img/linkedin.png")
+    a#google
+        :background sprite-image("/img/google.png")
+    a#pandora
+        :background sprite-image("/img/pandora.png")
+    a#reddit
+        :background sprite-image("/img/reddit.png")
+    a#youtube
+        :background sprite-image("/img/youtube.png")
+    a#github
+        :background sprite-image("/img/github.png")
+    a#tumblr
+        :background sprite-image("/img/tumblr.png")
+    a#pinboard
+        :background sprite-image("/img/pinboard.png")
+    a#twitter
+        :background sprite-image("/img/twitter.png")
+    a.imglink
+        :text-decoration none
+        :width 16px
+        :height 16px
+        :display inline-block
+        :padding 0
     .entry
         a
             :text-decoration underline
@@ -211,7 +237,7 @@ li.postlist
         :padding-right 0.25em
         
 #recent
-    :font-family verdana, arial, times, "Times New Roman", sans-serif
+    :font-family Verdana, Arial, "Times New Roman", sans-serif
     :font-size 0.95em
     :overflow hidden
     ul
@@ -219,6 +245,10 @@ li.postlist
         :margin 0px
         :margin-left 20px
         :list-style-type none
+        a.imglink
+            :float left
+            :margin-top 3px
+            :margin-left -20px
         img
             :float left
             :margin-top 3px
