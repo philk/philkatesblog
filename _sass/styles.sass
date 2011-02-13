@@ -2,6 +2,7 @@
 @import compass/reset.sass
 @import compass/utilities.sass
 @import blueprint/modules/fancy_type.sass
+@import "compass/css3/transition"
 
 +blueprint-typography("body")
 +blueprint-utilities
@@ -133,14 +134,17 @@ li.postlist
         +column(4)
         +push(0)
         :margin-bottom 0.5em
-        :border-left 2px solid #888
-        :border-bottom 2px dashed #888
-        :border-right 2px solid #888
+        :border-left 2px solid #000
+        :border-bottom 2px dashed #000
+        :border-right 2px solid #000
+        :opacity 0.3
+        +transition(opacity, 0.3s, ease-in-out)
     #homenavbox:hover
         :cursor pointer
-        :border-left 2px dashed #888
-        :border-bottom 2px solid #888
-        :border-right 2px dashed #888
+        :border-left 2px dashed #000
+        :border-bottom 2px solid #000
+        :border-right 2px dashed #000
+        :opacity 1
         
 
 .nav
@@ -162,25 +166,32 @@ li.postlist
     #leftnav
         :cursor pointer
         :padding-top 0em
-        :border-top 2px solid #888
-        :border-bottom 2px solid #888
-        :border-right 2px dashed #888
+        :border-top 2px solid #000
+        :border-bottom 2px solid #000
+        :border-right 2px dashed #000
         :height 50%
+        :margin-top 2.5em
+        :opacity 0.3
+        +transition(opacity, 0.3s, ease-in-out)
     #leftnav:hover
-        :border-right 2px solid #888
-        :border-top 2px dashed #888
-        :border-bottom 2px dashed #888
+        :border-right 2px solid #000
+        :border-top 2px dashed #000
+        :border-bottom 2px dashed #000
+        :opacity 1
     #rightnav
         :cursor pointer
         :padding-top 0em
-        :border-top 2px solid #888
-        :border-bottom 2px solid #888
-        :border-left 2px dashed #888
+        :border-top 2px solid #000
+        :border-bottom 2px solid #000
+        :border-left 2px dashed #000
         :height 50%
+        :opacity 0.3
+        +transition(opacity, 0.3s, ease-in-out)
     #rightnav:hover
-        :border-left 2px solid #888
-        :border-top 2px dashed #888
-        :border-bottom 2px dashed #888
+        :border-left 2px solid #000
+        :border-top 2px dashed #000
+        :border-bottom 2px dashed #000
+        :opacity 1
         
 .sitelinks
     a
