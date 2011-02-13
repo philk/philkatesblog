@@ -13,9 +13,6 @@
 #container
     +container
     :margin-top 4em
-    h4
-        :font-size 1.3em
-        :font-family Helvetica, Arial, sans-serif
     
 #page_header
     +column(10)
@@ -33,7 +30,8 @@
             :text-decoration underline
         a:visited
             :border none
-    h4
+    h2
+        :font-size 1.25em
         :font-weight normal
 
 #post_header
@@ -91,6 +89,9 @@
 
 #sidebar
     +column(7)
+    h1
+        :font-size 1.3em
+        :margin-bottom 0.5em
     a
         :color #000
     a:hover
@@ -140,6 +141,9 @@ li.postlist
 .postlist
     +prepend(1)
     :list-style-type none
+    h1
+        :font-size 1.1em
+        :display inline
     strong
         :font 1.25em "Courier New", "Courier", monospace
         :font-weight bold
@@ -233,7 +237,8 @@ li.postlist
         :border-bottom 2px dashed #000
         :opacity 1
         
-.sitelinks
+#sitelinks
+    :margin-bottom 1em
     a
         :padding-right 0.25em
         
@@ -241,6 +246,8 @@ li.postlist
     :font-family Verdana, Arial, "Times New Roman", sans-serif
     :font-size 0.95em
     :overflow hidden
+    h1
+        :font-size 1.25em
     ul
         :padding 0em
         :margin 0px

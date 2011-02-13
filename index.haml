@@ -4,31 +4,35 @@ title:
 ---
 
 .centerbox 
-  #postlistbox
+  %section#postlistbox
     - site.collated_posts.sort.reverse.each do |year, months|
-      %h2= year
-      - months.sort.reverse.each do |month,days|
-        %ol
-          - days.sort.reverse.each do |day,posts|
-            - posts.each do |post|
-              %li.postlist
-                %strong= "[#{post.date.strftime("%b %d")}]"
-                = link_to(h(post.title), post.url)
-        %hr
+      %section
+        %header
+          %h2= year
+        - months.sort.reverse.each do |month,days|
+          %ol
+            - days.sort.reverse.each do |day,posts|
+              - posts.each do |post|
+                %li.postlist
+                  %article
+                    %strong= "[#{post.date.strftime("%b %d")}]"
+                    %h1= link_to(h(post.title), post.url)
+          %hr
 
   #sidebar
-    %h4 Other places you can find me:
-    .sitelinks 
-      %a.imglink{:id => "facebook", :href => "http://facebook.com/philkates"}
-      %a.imglink{:id => "flickr", :href => "http://flickr.com/hawk684"}
-      %a.imglink{:id => "lastfm", :href => "http://www.last.fm/user/hawk684"}
-      %a.imglink{:id => "linkedin", :href => "http://www.linkedin.com/in/philkates"}
-      %a.imglink{:id => "google", :href => "http://www.google.com/profiles/hawk684"}
-      %a.imglink{:id => "pandora", :href => "http://www.pandora.com/people/hawk684"}
-      %a.imglink{:id => "reddit", :href => "http://www.reddit.com/user/PhilK/"}
-      %a.imglink{:id => "youtube", :href => "http://www.youtube.com/user/hawk684"}
-      %a.imglink{:id => "github", :href => "http://github.com/philk"}
-      %a.imglink{:id => "tumblr", :href => "http://philkates.tumblr.com/"}
-      %a.imglink{:id => "pinboard", :href => "http://pinboard.in/u:philk/"}
-    %br
+    %nav
+      %h1 Other places you can find me:
+      #sitelinks 
+        %a.imglink{:id => "facebook", :href => "http://facebook.com/philkates"}
+        %a.imglink{:id => "flickr", :href => "http://flickr.com/hawk684"}
+        %a.imglink{:id => "lastfm", :href => "http://www.last.fm/user/hawk684"}
+        %a.imglink{:id => "linkedin", :href => "http://www.linkedin.com/in/philkates"}
+        %a.imglink{:id => "google", :href => "http://www.google.com/profiles/hawk684"}
+        %a.imglink{:id => "pandora", :href => "http://www.pandora.com/people/hawk684"}
+        %a.imglink{:id => "reddit", :href => "http://www.reddit.com/user/PhilK/"}
+        %a.imglink{:id => "youtube", :href => "http://www.youtube.com/user/hawk684"}
+        %a.imglink{:id => "github", :href => "http://github.com/philk"}
+        %a.imglink{:id => "tumblr", :href => "http://philkates.tumblr.com/"}
+        %a.imglink{:id => "pinboard", :href => "http://pinboard.in/u:philk/"}
     %section#recent
+      %h1 Recent Activity:
