@@ -3,7 +3,7 @@ layout: default
 ---
 
 #homenav
-  #homenavbox{:onClick => "location.href='/'"}
+  #homenavbox
     %a{:href => "/"}
       %span
         &uarr;
@@ -14,7 +14,7 @@ layout: default
 .centerbox
   .nav
     - if page.previous
-      #leftnav{:onClick => "location.href='#{page_link(page.previous)}'"}
+      #leftnav
         %a{:href => page_link(page.previous)}
           %span
             &larr;
@@ -53,7 +53,7 @@ layout: default
   
   .nav
     - if page.next
-      #rightnav{:onClick => "location.href='#{page_link(page.next)}'"}
+      #rightnav
         %a{:href => page_link(page.next)}
           %span
             &rarr;
