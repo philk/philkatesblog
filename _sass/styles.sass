@@ -17,7 +17,7 @@
         :font-size 1.3em
         :font-family Helvetica, Arial, sans-serif
     
-#header
+#page_header
     +column(10)
     +prepend(5)
     :margin-bottom 3em
@@ -35,6 +35,13 @@
             :border none
     h4
         :font-weight normal
+
+#post_header
+    +column(18)
+    +prepend(1)
+    +append(1)
+    :font-size 0.9em
+    :margin-left 10px
 
 #postlistbox
     +column(13)
@@ -77,6 +84,9 @@
     :font-family serif
     h1
         :margin-bottom 0em
+    ul
+        :padding-left 0em
+        :list-style-type none
 
 #sidebar
     +column(7)
@@ -126,8 +136,11 @@ li.postlist
     a
         :text-decoration none
         :color #000
+        :display block
+        :height 100%
+        :width 100%
     a:visited
-        :color #888
+        :color #000
     span
         :border-bottom 0px solid #999
     #homenavbox

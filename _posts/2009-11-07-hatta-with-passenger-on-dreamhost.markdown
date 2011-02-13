@@ -1,5 +1,6 @@
-Hatta take a ride with Dreamhost
---------------------------------
+---
+title: Hatta take a ride with Dreamhost
+---
 
 I've been looking for a personal wiki off and on for a little while now and finally began searching in earnest in the last few days.  I've heard great things about maintaining your own personal wiki but never really found much use for one.  I've mainly survived using [Evernote](http://www.evernote.com) as my external brain but it doesn't really have a good way to handle code.  There are various snippets that I need to refer to from time to time and Evernote just doesn't love the formatting and doesn't support syntax highlighting.  One of the premium features is being able to attach any file types to the notes but that just seems...inelegant?  There's also the issue of Linux.  Recently I've been using [ArchLinux](http://www.archlinux.org) at home and while Evernote has clients for Windows, Mac, and iPhone it's still missing a Linux client (and running it via Wine is a terrible experience).  So a personal wiki seemed like it might be what I was looking for.  At worst I just might learn something!
 

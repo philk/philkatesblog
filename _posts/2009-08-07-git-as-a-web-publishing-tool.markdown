@@ -2,9 +2,6 @@
 title: Git for Web Publishing
 ---
 
-Git for Web Publishing
----------
-
 I've been using [git](http://git-scm.com/) for awhile as my main version control system and was thinking of how you can push a repository to a remote site (usually for sharing that repository between developers) which made me think about how I could use that to push out the latest updates a website I'm working on.  I found out that some people don't recommend this but I couldn't find a reason that really mattered to me (it's an extremely low traffic static site).
 
 Holy crap was it harder than it should be.  Here's how I did it (I'm assuming you already know a bit about git and honestly this is mostly notes for me to remember how I did it):

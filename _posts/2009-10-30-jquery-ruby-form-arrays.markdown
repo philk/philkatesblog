@@ -1,5 +1,6 @@
-jQuery, Ruby, and Multidimensional Forms
----------------------------------------------------------------
+---
+title: jQuery, Ruby, and Multidimensional Forms
+---
 
 I just had to open my big mouth and suggest that I do a RSVP system for my wedding website.  Oh, I'll do the form with the jQuery and the Ruby and it'll be dynamic and buzzwordy and it'll be easy!
 
