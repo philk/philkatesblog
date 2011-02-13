@@ -15,9 +15,6 @@
     %link{:rel => "openid2.provider", :href => "https://www.google.com/accounts/o8/ud?source=profiles"}
     %link{:rel => "openid2.local_id", :href => "http://www.google.com/profiles/hawk684"}
     
-    %script{:src => '/js/jquery-1.4.4.min.js', :type => 'text/javascript'}
-    %script{:src => '/js/recentloader.js', :type => 'text/javascript'}
-    %script{:src => '/js/jquery.timeago.js', :type => 'text/javascript'}
     %script{:src => '/js/modernizr-1.6.min.js', :type => 'text/javascript'}
   %body
     #container
@@ -34,6 +31,11 @@
           %li I solve problems.
       = content
 
+    %script{:src => '//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js', :type => 'text/javascript'}
+    :javascript
+      !window.jQuery && document.write(unescape('%3Cscript src="js/jquery-1.4.4.js"%3E%3C/script%3E'))
+    %script{:src => '/js/recentloader.js', :type => 'text/javascript'}
+    %script{:src => '/js/jquery.timeago.js', :type => 'text/javascript'}
 
 :javascript
   $(document).ready(function() {
@@ -42,9 +44,12 @@
   });
 
 :javascript
-  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-  try {
-    var pageTracker = _gat._getTracker("UA-8643842-1");
-    pageTracker._trackPageview();
-  } catch(err) {}
+  var _gaq = [['_setAccount', 'UA-8643842-1'], ['_trackPageview']];
+  (function(d, t) {
+   var g = d.createElement(t),
+       s = d.getElementsByTagName(t)[0];
+   g.async = true;
+   g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+   s.parentNode.insertBefore(g, s);
+  })(document, 'script');
+ 
